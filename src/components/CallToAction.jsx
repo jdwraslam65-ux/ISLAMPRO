@@ -1,17 +1,21 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 const CallToAction = () => {
-	return (
-		<motion.h1
-			className='text-xl font-bold text-white leading-8 w-full'
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			transition={{ duration: 0.5, delay: 0.5 }}
-		>
-			Let's turn your ideas into reality
-		</motion.h1>
-	);
+  return (
+    <div style={{ textAlign: 'center', paddingBottom: '40px' }}>
+      <button style={{ 
+        backgroundColor: '#2563eb', 
+        color: 'white', 
+        padding: '12px 24px', 
+        borderRadius: '8px', 
+        border: 'none', 
+        fontSize: '1rem',
+        cursor: 'pointer'
+      }}>
+        سجل معنا الآن
+      </button>
+    </div>
+  );
 };
 
 export default CallToAction;
