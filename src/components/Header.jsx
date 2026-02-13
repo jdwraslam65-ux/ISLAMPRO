@@ -3,15 +3,19 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header style={{ background: '#1e293b', color: 'white', padding: '1rem', textAlign: 'center' }}>
-      <h1>منصة إسلام PRO</h1>
-      <nav>
-        <Link to="/" style={{ color: '#60a5fa', textDecoration: 'none' }}>الرئيسية</Link>
-      </nav>
+    <header className="bg-slate-800 text-white p-4 shadow-md">
+      <div className="container mx-auto flex justify-between items-center">
+        <Link to="/" className="text-xl font-bold">منصة إسلام PRO</Link>
+        <nav>
+          <ul className="flex gap-4">
+            <li>
+              <Link to="/" className="hover:text-blue-400 transition-colors">الرئيسية</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };
 
 export default Header;
-
-     
